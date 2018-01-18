@@ -1,0 +1,383 @@
+<resources>
+    <string-array name="age_value">
+        <item>10 – 17</item>
+        <item>18 – 24</item>
+        <item>25 – 34 </item>
+        <item>35 – 44</item>
+        <item>45 – 54</item>
+        <item>55 – 64</item>
+        <item>65+</item>
+    </string-array>
+
+    <string-array name="miles_array">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+
+    </string-array>
+
+    <string-array name="states_list">
+        <item>Alabama:AL</item>
+        <item>Alaska:AK</item>
+        <item>Arizona:AZ</item>
+        <item>Arkansas:AR</item>
+        <item>California:CA</item>
+        <item>Colorado:CO</item>
+        <item>Connecticut:CT</item>
+        <item>Delaware:DE</item>
+        <item>Florida:FL</item>
+        <item>Georgia:GA</item>
+        <item>Hawaii:HI</item>
+        <item>Idaho:ID</item>
+        <item>Illinois:IL</item>
+        <item>Indiana:IN</item>
+        <item>Iowa:IA</item>
+        <item>Kansas:KS</item>
+        <item>Kentucky:KY</item>
+        <item>Louisiana:LA</item>
+        <item>Maine:ME</item>
+        <item>Maryland:MD</item>
+        <item>Massachusetts:MA</item>
+        <item>Michigan:MI</item>
+        <item>Minnesota:MN</item>
+        <item>Mississippi:MS</item>
+        <item>Missouri:MO</item>
+        <item>Montana:MT</item>
+        <item>Nebraska:NE</item>
+        <item>Nevada:NV</item>
+        <item>New Hampshire:NH</item>
+        <item>New Jersey:NJ</item>
+        <item>New Mexico:NM</item>
+        <item>New York:NY</item>
+        <item>North Carolina:NC</item>
+        <item>North Dakota:ND</item>
+        <item>Ohio:OH</item>
+        <item>Oklahoma:OK</item>
+        <item>Oregon:OR</item>
+        <item>Pennsylvania:PA</item>
+        <item>Rhode Island:RI</item>
+        <item>South Carolina:SC</item>
+        <item>South Dakota:SD</item>
+        <item>Tennessee:TN</item>
+        <item>Texas:TX</item>
+        <item>Utah:UT</item>
+        <item>Vermont:VT</item>
+        <item>Virginia:VA</item>
+        <item>Washington:WA</item>
+        <item>West Virginia:WV</item>
+        <item>Wisconsin:WI</item>
+        <item>Wyoming:WY</item>
+    </string-array>
+
+    <string name="app_name">LocalBlip</string>
+    <string name="nd_account">Account</string>
+    <string name="nd_smedia">My Social Media</string>
+    <string name="nd_locations">My Locations</string>
+    <string name="nd_create_blip">Create A Blip</string>
+    <string name="nd_visibility">Increase Visibility</string>
+    <string name="nd_analytics">Blip Analytics</string>
+    <string name="nd_messages">Messages</string>
+    <string name="nd_tools">Tool and Tips</string>
+    <string name="ndst_consumer">Shop As A Consumer</string>
+    <string name="nd_personal_profile">Personal Profile</string>
+    <string name="nd_profile">Profile</string>
+    <string name="nd_personal_blipbook">Personal BlipBook</string>
+    <string name="nd_blipbook">BlipBook</string>
+    <string name="nd_new_blips">New Blips</string>
+    <string name="nd_shop_blips">Shop for Blips</string>
+    <string name="nd_faq">FAQ</string>
+    <string name="nd_logout">Logout</string>
+    <string name="title_activity_blip_details">Blip Details</string>
+    <string name="first_name">First name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="save">Save</string>
+    <string name="no_blips_found">No Blips found.\nTry to adjust search conditions.</string>
+    <string name="blips_from_other_place">No Blips match your zip code. Showing closest Blips.</string>
+    <string name="different_location">You are in a different city, would you like to change your locaton?</string>
+    <string name="inactive">(Inactive)</string>
+    <string name="remove">Remove</string>
+    <string name="edit">Edit</string>
+    <string name="description">Description:</string>
+    <string name="fine_print">Fine print:</string>
+    <string name="you_save">You Save</string>
+    <string name="use_by">Use by:</string>
+    <string name="percent_sign" formatted="false">%</string>
+    <string name="dollar_sign">$</string>
+    <string name="blipspicks">Blip’s Picks:</string>
+    <string name="location_info">Location information:</string>
+    <string name="add_to_blipbook">Add to my BlipBook</string>
+    <string name="blips_left">Blips Remaining:</string>
+    <string name="view_coupon">View coupon</string>
+    <string name="blipboost_dialog_title">About this option</string>
+    <string name="blipboost_dialog_message">Our mobile ordering option is coming soon. For now, you can order this product via the website. Would you like us to email you a link?</string>
+    <string name="email_me">Email me</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="select_a_category">Select a category</string>
+    <string name="no_messages">No messages</string>
+    <string name="no_messages_found">No messages found</string>
+    <string name="message_text">Message text</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sing_up">Sign up</string>
+    <string name="forgot_a_password">Forgot Password</string>
+    <string name="new_">New</string>
+    <string name="never_expires">Never expires</string>
+    <string name="done">Done</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="remove_from_blipbook">Remove from my BlipBook</string>
+    <string name="i_vendor">I am a Merchant</string>
+    <string name="i_consumer">I am a Consumer</string>
+    <string name="blip_title">Blip title</string>
+    <string name="add_subcategory">+ Subcategory</string>
+    <string name="blip_is_active">The Blip is active</string>
+    <string name="local">Local</string>
+    <string name="nationwide">Online</string>
+    <string name="dollar_value">Dollar Value</string>
+    <string name="percent_value">Percentage Value</string>
+    <string name="value">Value</string>
+    <string name="off">Off</string>
+    <string name="quantity">Quantity:</string>
+    <string name="expires_at">Expires at:</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="never">never</string>
+    <string name="add_locations">+ Locations</string>
+    <string name="description_instruction">To ensure maximum visibility do your best to describe your product or service in detail.</string>
+    <string name="fineprint_instruction">These are the rules for your Blip. Include any blackout dates or limitations associated with your offer.</string>
+    <string name="location_type">Location type</string>
+    <string name="market_area">Market Area</string>
+    <string name="your_location">Your location</string>
+    <string name="first_address">First Address</string>
+    <!--<string name="second_address">Second Address</string>-->
+    <string name="second_address">Suite / Unit Number</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zipcode">Zip code</string>
+    <string name="website">Website</string>
+    <string name="short_description">Short description</string>
+    <string name="descr">Be sure to describe your location in detail. Passion for your business will attract new customers.</string>
+    <string name="search_for">Search for</string>
+    <string name="in">In Category</string>
+    <string name="from_local">From Local Merchants</string>
+    <string name="from_nationwide">From Online Merchants</string>
+    <string name="show_results_within">Show results within</string>
+    <string name="miles_from">miles from</string>
+    <string name="apply">Apply</string>
+    <string name="title">Title</string>
+    <string name="age">Age</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="home_zip">is my home zip</string>
+    <string name="notiy_me">Notify me about great promotions within</string>
+    <string name="for_categories">for the following categories:</string>
+    <string name="zipcode_optional">Zip code (Optional)</string>
+    <string name="phone_optional">Phone number (Optional)</string>
+    <string name="sign_me_up">Sign Me Up</string>
+    <string name="my_social_media">My Social Media</string>
+    <string name="all_categories">All categories</string>
+    <string name="do_you_want_logout">Do you want logout?</string>
+    <string name="no">No</string>
+    <string name="read">read</string>
+    <string name="ok">OK</string>
+    <string name="view">view</string>
+    <string name="recived">received</string>
+    <string name="delivered">delivered</string>
+    <string name="blip_added_to_bb">Blip added to BlipBook</string>
+    <string name="blip_removed_from_bb">Blip removed from BlipBook</string>
+    <string name="unrated">Unrated</string>
+    <string name="rated_up">Rated up</string>
+    <string name="rate_up">Rate up</string>
+    <string name="rated_down">Rated down</string>
+    <string name="rate_down">Rate down</string>
+    <string name="nationwide_location">Online location</string>
+    <string name="passwords_should_be_equal">Passwords should be equal</string>
+    <string name="business_name">Business name</string>
+    <string name="saved">Saved</string>
+    <string name="flag_as_inappropriate">Flag this Blip as inappropriate?</string>
+    <string name="flag">Flag</string>
+    <string name="block_this_vendor">Block all Blips from this merchant?</string>
+    <string name="block">Block</string>
+    <string name="undo">Undo</string>
+    <string name="blip_removed">Blip removed</string>
+    <string name="blip_restored">Blip restored</string>
+    <string name="restore_failed">Restore failed:</string>
+    <string name="remove_failed">Removal failed:</string>
+    <string name="alert_failed">Failed:</string>
+    <string name="alert_sent">Sent successfully:</string>
+    <string name="failed_to_get_data">"Failed to get data: "</string>
+    <string name="save_failed">"Save failed: "</string>
+    <string name="operation_failed">Operation failed:</string>
+    <string name="install_map_application">Install map application to find this location</string>
+    <string name="install_web_browser">Install web browser to view link</string>
+    <string name="install_caller">Install app for calling</string>
+    <string name="flagged">Flagged as inappropriate</string>
+    <string name="share">Share</string>
+    <string name="blips_from_vendor_blocked">Blips from this merchant blocked</string>
+    <string name="moments_ago">Moments ago</string>
+    <string name="failed_to_send_a_message">"Failed to send a message: "</string>
+    <string name="refresh">Refresh</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="view_blip_details">View Blip Details</string>
+    <string name="edit_blip_details">Edit Blip Details</string>
+    <string name="add_1_location">Add at least 1 location</string>
+    <string name="add_1_local_location">Add at least 1 local location for local Blip</string>
+    <string name="add_1_nationwide_location">Add at least 1 online location for online Blip</string>
+    <string name="enter_blip_value">Enter Blip discount value</string>
+    <string name="enter_blip_title">Enter Blip title</string>
+    <string name="select_file">Select file under 2M size</string>
+    <string name="blip_created">Blip created</string>
+    <string name="blip_updated">Blip updated</string>
+    <string name="blip_saved">Blip Saved</string>
+    <string name="edit_location">Edit Location</string>
+    <string name="location_created">Location created</string>
+    <string name="location_updated">Location updated</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="instructions_sent">You will receive email with instruction soon</string>
+    <string name="enter_valid_email">Enter valid email</string>
+    <string name="no_option">No such option</string>
+    <string name="email_sent">Email sent</string>
+    <string name="view_location">View Location</string>
+    <string name="select_location">Select locations</string>
+    <string name="failed_to_get_categories">Failed to get categories list:</string>
+    <string name="enter_name">Enter the name</string>
+    <string name="profile_updated">Profile updated.</string>
+    <string name="profile_update_failed">Profile update failed:</string>
+    <string name="notifications_updated">Notifications selection updated</string>
+    <string name="notifications_update_failed">Notifications selection update failed:</string>
+    <string name="select_valid_vendor">Select a valid merchant</string>
+    <string name="enter_message">Enter your message</string>
+    <string name="filter_applied">Filter applied</string>
+    <string name="enter_password">Enter password</string>
+    <string name="repeat_password">Repeat the password</string>
+    <string name="select_subcategories">Select subcategories</string>
+    <string name="blip_not_removed">Blip not removed:</string>
+    <string name="your_blips">Your Blips</string>
+    <string name="no_locations">No Locations</string>
+    <string name="location_removed">Location removed</string>
+    <string name="location_not_removed">"Location was not removed: "</string>
+    <string name="send">Send</string>
+    <string name="what_to_ask">What do you want to ask?</string>
+    <string name="vendor_name">Merchant name</string>
+    <string name="send_to_localblip">Send to LocalBlip</string>
+    <string name="dollar_off_amount">$ Off amount (Example: $10 Off)</string>
+    <string name="percent_off_amount" formatted="false">% Off amount (Example: 10% Off)</string>
+    <string name="select_category">Select a Category</string>
+    <string name="new_message">New message from</string>
+    <string name="blip_alert">A Blip Alert from</string>
+    <string name="new_blip">New Blips arrived</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="restoring_session">Restoring last session…</string>
+    <string name="follow">Follow</string>
+    <string name="follow_vendor">Follow merchant on</string>
+    <string name="no_new_blips">No new Blips found</string>
+    <string name="no_blips_created">You have not created any Blips</string>
+    <string name="no_blips_added">You have not added any Blips</string>
+    <string name="nd_redeem">Redeem A Blip</string>
+    <string name="tap_to_capture">Tap to select/capture\nthe QR Code image</string>
+    <string name="redeem_code">Redeem this QR code</string>
+    <string name="select_another">Select another</string>
+    <string name="details">Details</string>
+    <string name="enter_blip_description">Enter Blip description</string>
+    <string name="add_image">Add image</string>
+    <string name="add_blip_image">Add Blip image</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="visibility_gender">
+        <item>All</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="visibility_category">
+        <item>-Choose A Category-</item>
+        <item>Auto / Marine / Industrial</item>
+        <item>Clothing / Accessories / Jewelry</item>
+        <item>Electronics and Computers</item>
+        <item>Entertainment and Recreation</item>
+        <item>Food and Drink</item>
+        <item>Handmade Items / Crafts</item>
+        <item>Health and Beauty</item>
+        <item>Home / Garden / Tools</item>
+        <item>Lodging</item>
+        <item>Pet Care</item>
+        <item>Professional Services</item>
+    </string-array>
+
+    <string-array name="hour">
+        <item>12 AM</item>
+        <item>1 AM</item>
+        <item>2 AM</item>
+        <item>3 AM</item>
+        <item>4 AM</item>
+        <item>5 AM</item>
+        <item>6 AM</item>
+        <item>7 AM</item>
+        <item>8 AM</item>
+        <item>9 AM</item>
+        <item>10 AM</item>
+        <item>11 AM</item>
+        <item>12 PM</item>
+        <item>1 PM</item>
+        <item>2 PM</item>
+        <item>3 PM</item>
+        <item>4 PM</item>
+        <item>5 PM</item>
+        <item>6 PM</item>
+        <item>7 PM</item>
+        <item>8 PM</item>
+        <item>9 PM</item>
+        <item>10 PM</item>
+        <item>11 PM</item>
+    </string-array>
+    <string name="terms">
+
+        LocalBlip.AI Command Phrases:\n\n\n\n
+        Thank you for using LocalBlip.AI! And welcome to the Tutorial! LocalBlip.AI is designed to help automate the process of creating your meeting agendas and minutes to save you time and let you focus on the things that matter.\n\n
+1.	Following signup, there are two ways for signip 1st is merchant and 2nd is consumer.\n\n
+2.	Complete Your Signup.\n\n
+
+    </string>
+    <string-array name="minute">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
+    <!--by jasyc-->
+    <string name="invalid_email">Invalid email</string>
+    <string name="incorrect_password">Incorrect password</string>
+    <string name="title_activity_map_fragment">Map</string>
+
+    <string name="yes">Yes</string>
+    <string name="local_location">Local\nLocation</string>
+    <string name="online_location">Online\nLocation</string>
+    <string name="local_blip">Local Blip</string>
+    <string name="online_blip">Online Blip</string>
+    <string name="blipalertText">Send instant mobile alerts to your choice of LocalBlip consumers</string>
+    <string name="bus_description">Business Description</string>
+    <string name="loading_video">Loading Video</string>
+    <string name="imagetext">Video must be less than 60MB. File type must be .mp4, .avi, .flv, .ogg, .webm, .m4v We recommend videos of 15 seconds or less.</string>
+    <string name="local_video">Video</string>
+    <string name="local_image">Image</string>
+    <string name="add_blip_video">Add Blip Video</string>
+    <string name="add_video">Add Video</string>
+</resources>

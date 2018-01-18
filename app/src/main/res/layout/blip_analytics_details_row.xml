@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/content_areas_space"
+    android:paddingBottom="@dimen/content_areas_space"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_name"/>
+    <TextView
+        android:id="@+id/tv_views"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_blipbooks"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_redeems"
+        android:gravity="center"/>
+</TableRow>

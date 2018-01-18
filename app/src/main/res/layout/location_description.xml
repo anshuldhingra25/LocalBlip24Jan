@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/card_text_vertical_big_margin"
+    android:paddingBottom="@dimen/content_areas_space"
+    style="@style/Base.TextAppearance.AppCompat.Medium"
+    android:textColor="@color/secondary_text_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+</TextView>

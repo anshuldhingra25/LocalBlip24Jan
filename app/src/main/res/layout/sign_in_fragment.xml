@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.90">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/terms" />
+
+                    <CheckBox
+                        android:id="@+id/agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/list_item_height"
+                        android:text="I accept terms of services" />
+                </LinearLayout>
+            </ScrollView>
+
+        </WebView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <Button
+                android:id="@+id/about_gotit"
+                style="@style/Raised.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_gotit"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white_75_color"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="@dimen/account_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/content_side_edge_padding"
+            android:paddingStart="@dimen/content_side_edge_padding">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/big_logo" />
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/labeled_text_field_bottom_padding"
+                    android:paddingTop="@dimen/labeled_text_field_top_padding">
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/labeled_text_field_bottom_padding"
+                    android:paddingTop="@dimen/labeled_text_field_top_padding">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:imeOptions="actionGo"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_sign_in"
+                    style="@style/Raised.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_raised_bottom_margin"
+                    android:layout_marginEnd="@dimen/button_raised_margin"
+                    android:layout_marginStart="@dimen/button_raised_margin"
+                    android:layout_marginTop="@dimen/labeled_text_field_top_padding"
+                    android:text="@string/sign_in" />
+
+                <Button
+                    android:id="@+id/btn_new_password"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/actionBarItemBackground"
+                    android:gravity="center"
+                    android:text="@string/forgot_a_password"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/card_title_to_subtitle_padding"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="@string/no_account"
+                    android:textColor="@color/secondary_text_color" />
+
+                <Button
+                    android:id="@+id/btn_sign_up"
+                    style="@style/Raised.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_raised_bottom_margin"
+                    android:layout_marginEnd="@dimen/button_raised_margin"
+                    android:layout_marginStart="@dimen/button_raised_margin"
+                    android:text="@string/sing_up" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_working"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/logo_margin"
+                android:indeterminate="true" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

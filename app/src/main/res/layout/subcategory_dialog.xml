@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginStart="@dimen/dialog_content_margin"
+        android:layout_marginEnd="@dimen/dialog_content_margin"
+        android:layout_marginTop="@dimen/dialog_content_margin"
+        android:layout_marginBottom="@dimen/dialog_title_bottom_margin"
+        android:text="@string/title"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_marginStart="@dimen/dialog_content_margin"
+        android:layout_marginEnd="@dimen/dialog_content_margin"
+        android:paddingTop="@dimen/content_areas_space"
+        android:paddingBottom="@dimen/content_areas_space"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/ll_subcategories"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:text="@android:string/ok"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_toStartOf="@id/btn_ok"
+            android:text="@android:string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

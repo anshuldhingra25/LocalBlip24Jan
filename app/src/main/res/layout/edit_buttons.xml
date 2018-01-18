@@ -1,0 +1,40 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_buttons"
+    app:cardElevation="4dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="-6dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_remove"
+            android:clickable="true"
+            android:layout_gravity="center_vertical|end"
+            android:drawablePadding="8dp"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:textColor="?colorAccent"
+            android:text="@string/remove"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/tool_bar_height" />
+        <Button
+            android:id="@+id/btn_edit"
+            android:clickable="true"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="8dp"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:textColor="?colorAccent"
+            android:text="@string/edit"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/tool_bar_height" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

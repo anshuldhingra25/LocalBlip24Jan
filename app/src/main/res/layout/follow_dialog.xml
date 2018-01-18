@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginStart="@dimen/dialog_content_margin"
+        android:layout_marginEnd="@dimen/dialog_content_margin"
+        android:layout_marginTop="@dimen/dialog_content_margin"
+        android:layout_marginBottom="@dimen/dialog_title_bottom_margin"
+        android:text="@string/follow_vendor"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_categories"
+        android:paddingStart="@dimen/content_areas_space"
+        android:paddingEnd="@dimen/content_areas_space"
+        android:layout_width="256dp"
+        android:layout_height="360dp"/>
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_gravity="end"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:text="@android:string/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

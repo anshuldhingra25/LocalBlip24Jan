@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/visible"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:paddingBottom="@dimen/card_text_vertical_big_margin"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/alery_layout"
+                style="@style/Raised.Button"
+                android:background="@drawable/rectangle"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/alert_title"
+                    android:ellipsize="marquee"
+                    android:text="BlipAlert"
+                    android:layout_toRightOf="@+id/alert_icon"
+                    android:layout_marginTop="@dimen/card_title_vertical_big_margin"
+                    android:layout_marginEnd="@dimen/card_title_side_margin"
+                    android:layout_marginStart="@dimen/card_title_side_margin"
+                    android:layout_marginBottom="@dimen/card_title_vertical_margin"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/alert_summary"
+                    android:layout_below="@+id/alert_title"
+                    android:layout_toRightOf="@+id/alert_icon"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="@dimen/card_text_side_margin"
+                    android:text="Send instant mobile alerts to your choice of LocalBlip consumers"
+                    android:layout_marginStart="@dimen/card_text_side_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/alert_icon"
+                    android:layout_width="@dimen/list_item_height"
+                    android:layout_height="@dimen/min_touch_target"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/blip_alert"
+                    android:layout_alignTop="@+id/alert_title"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="12dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/rectangle"
+                android:layout_marginTop="15dp"
+                style="@style/Raised.Button"
+                android:id="@+id/mail_layout"
+                android:layout_below="@+id/alery_layout"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/mail_title"
+                    android:ellipsize="marquee"
+                    android:text="BlipMail"
+                    android:layout_toRightOf="@+id/mail_icon"
+                    android:layout_marginTop="@dimen/card_title_vertical_big_margin"
+                    android:layout_marginEnd="@dimen/card_title_side_margin"
+                    android:layout_marginStart="@dimen/card_title_side_margin"
+                    android:layout_marginBottom="@dimen/card_title_vertical_margin"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/mail_summary"
+                    android:layout_below="@+id/mail_title"
+                    android:layout_toRightOf="@+id/mail_icon"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="@dimen/card_text_side_margin"
+                    android:text="Send email notificatios to your choice of LocalBlip consumers"
+                    android:layout_marginStart="@dimen/card_text_side_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/mail_icon"
+                    android:layout_width="@dimen/list_item_height"
+                    android:layout_height="@dimen/min_touch_target"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/blip_mail"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/rectangle"
+                android:layout_marginTop="15dp"
+                style="@style/Raised.Button"
+                android:visibility="gone"
+                android:id="@+id/pick_layout"
+                android:layout_below="@+id/mail_layout"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pick_title"
+                    android:ellipsize="marquee"
+                    android:text="Blip's Picks"
+                    android:layout_toRightOf="@+id/pick_icon"
+                    android:layout_marginTop="@dimen/card_title_vertical_big_margin"
+                    android:layout_marginEnd="@dimen/card_title_side_margin"
+                    android:layout_marginStart="@dimen/card_title_side_margin"
+                    android:layout_marginBottom="@dimen/card_title_vertical_margin"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/pick_summary"
+                    android:layout_below="@+id/pick_title"
+                    android:layout_toRightOf="@+id/pick_icon"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="@dimen/card_text_side_margin"
+                    android:text="Ensure your promotion is the first to be seen in your category"
+                    android:layout_marginStart="@dimen/card_text_side_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/pick_icon"
+                    android:layout_width="@dimen/list_item_height"
+                    android:layout_height="@dimen/min_touch_target"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/blip_pick"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

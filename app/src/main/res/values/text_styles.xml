@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Styles -->
+    <style name="TextAppearance.AppCompat.Body1.Inverse" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Body2.Inverse" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Button.Colored" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">?android:colorAccent</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Button.Inverse" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Caption.Inverse" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Display1.Inverse" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Display2.Inverse" parent="TextAppearance.AppCompat.Display2">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Display3.Inverse" parent="TextAppearance.AppCompat.Display3">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Display4.Inverse" parent="TextAppearance.AppCompat.Display4">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Headline.Inverse" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+</resources>

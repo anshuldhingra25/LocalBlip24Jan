@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tool_bar_height">64dp</dimen>
+    <dimen name="logo_margin">64dp</dimen>
+    <dimen name="content_side_edge_padding">24dp</dimen>
+    <dimen name="spinner_min_width">80dp</dimen>
+    <dimen name="list_side_edge_padding">24dp</dimen>
+    <dimen name="list_icon_size">40dp</dimen>
+    <dimen name="list_item_height">72dp</dimen>
+    <dimen name="list_item_content_start_padding">80dp</dimen>
+    <dimen name="nav_drawer_width">320dp</dimen>
+    <dimen name="nav_drawer_side_edge_padding">24dp</dimen>
+    <dimen name="nav_drawer_32_side_edge_padding">20dp</dimen>
+    <dimen name="nav_drawer_item_height">64dp</dimen>
+    <dimen name="nav_drawer_title_height">80dp</dimen>
+    <dimen name="nav_drawer_content_start_padding">80dp</dimen>
+    <dimen name="nav_drawer_icon_vertical_padding">20dp</dimen>
+    <dimen name="nav_drawer_wrapper_vertical_padding">24dp</dimen>
+    <dimen name="nav_drawer_32_icon_vertical_padding">12dp</dimen>
+    <dimen name="card_title_side_margin">24dp</dimen>
+    <dimen name="card_text_side_margin">24dp</dimen>
+    <dimen name="account_width">480dp</dimen>
+    <dimen name="recyclerview_bottom_padding_for_fab">104dp</dimen>
+    <dimen name="small_blip_card_width">272dp</dimen>
+    <dimen name="local_nationwide_switch_width">128dp</dimen>
+    <dimen name="filter_dialog_width">296dp</dimen>
+</resources>

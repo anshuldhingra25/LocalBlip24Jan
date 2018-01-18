@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Space
+        android:id="@+id/s_no_qr_image"
+        android:layout_centerInParent="true"
+        android:layout_width="168dp"
+        android:layout_height="168dp" />
+
+    <ImageView
+        android:id="@+id/iv_qr_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/no_qr_code"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_qr_hint"
+        android:layout_above="@id/s_no_qr_image"
+        android:layout_marginBottom="@dimen/content_side_edge_padding"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/tertiary_text_color"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/tap_to_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   <Button
+        android:gravity="center"
+        android:id="@+id/btn_capture"
+        android:text="@string/select_another"
+        style="@style/Raised.Button"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/content_side_edge_padding"
+        android:textColor="@color/accent_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   <Button
+        android:gravity="center"
+        android:id="@+id/btn_redeem"
+        android:text="@string/redeem_code"
+        style="@style/Raised.Button"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/content_side_edge_padding"
+        android:textColor="@color/accent_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:id="@+id/camera"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_height="300dp" />
+    <ImageView
+        android:layout_width="300dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image_redeem"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

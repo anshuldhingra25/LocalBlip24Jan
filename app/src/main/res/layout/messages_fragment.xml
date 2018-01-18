@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:text="@string/no_messages"
+        android:gravity="center"
+        android:visibility="gone"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/secondary_text_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.ordiacreativeorg.localblip.view.FixedSwipeRefreshLayout
+        android:id="@+id/fsrl_refresh"
+        android:layout_marginStart="@dimen/content_side_edge_padding"
+        android:layout_marginEnd="@dimen/content_side_edge_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_content"
+            android:scrollbars="vertical"
+            android:paddingBottom="@dimen/recyclerview_bottom_padding_for_fab"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.ordiacreativeorg.localblip.view.FixedSwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_main_action"
+        app:fabSize="normal"
+        android:src="@drawable/ic_action_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/content_side_edge_padding"/>
+</android.support.design.widget.CoordinatorLayout>

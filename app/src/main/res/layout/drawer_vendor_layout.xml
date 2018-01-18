@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/content_areas_space"
+    android:background="@color/cardview_light_background"
+    android:layout_width="@dimen/nav_drawer_width"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:padding="12dp"
+        android:src="@mipmap/big_logo_white"
+        android:background="@color/primary_color"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="@dimen/content_areas_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_drawer_title_height" />
+    <Button
+        android:id="@+id/btn_account"
+        android:layout_below="@id/iv_logo"
+        android:layout_width="match_parent"
+        android:text="@string/nd_account"
+        android:background="?attr/actionBarItemBackground"
+        android:singleLine="true"
+        android:onClick="onClick"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/iv_logo"
+        android:src="@drawable/cog_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp" />
+    <Button
+        android:id="@+id/btn_smedia"
+        android:layout_below="@id/btn_account"
+        android:layout_width="match_parent"
+        android:text="@string/nd_smedia"
+        android:background="?attr/actionBarItemBackground"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/btn_account"
+        android:src="@drawable/account_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp" />
+    <Button
+        android:id="@+id/btn_locations"
+        android:layout_below="@id/btn_smedia"
+        android:layout_width="match_parent"
+        android:text="@string/nd_locations"
+        android:background="?attr/actionBarItemBackground"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/btn_smedia"
+        android:src="@drawable/locations_icon"
+        android:layout_marginTop="@dimen/nav_drawer_32_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_32_side_edge_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_create_blip"
+        android:layout_below="@id/btn_locations"
+        android:layout_width="match_parent"
+        android:text="@string/nd_create_blip"
+        android:background="?attr/actionBarItemBackground"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/btn_locations"
+        android:src="@drawable/tag_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp" />
+    <Button
+        android:id="@+id/btn_redeem"
+        android:layout_below="@id/btn_create_blip"
+        android:layout_width="match_parent"
+        android:text="@string/nd_redeem"
+        android:background="?attr/actionBarItemBackground"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/btn_create_blip"
+        android:src="@drawable/qrcode_icon"
+        android:layout_marginTop="@dimen/nav_drawer_32_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_32_side_edge_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_visibility"
+        android:layout_below="@id/btn_redeem"
+        android:layout_width="match_parent"
+        android:text="@string/nd_visibility"
+        android:background="?attr/actionBarItemBackground"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/btn_redeem"
+        android:src="@drawable/visibility_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp" />
+    <Button
+        android:id="@+id/btn_analytics"
+        android:layout_below="@id/btn_visibility"
+        android:layout_width="match_parent"
+        android:text="@string/nd_analytics"
+        android:background="?attr/actionBarItemBackground"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/btn_visibility"
+        android:src="@drawable/stats_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp" />
+
+    <Button
+        android:id="@+id/btn_messages"
+        android:layout_below="@id/btn_analytics"
+        android:layout_width="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        android:text="@string/nd_messages"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+
+    <ImageView
+        android:layout_below="@id/btn_analytics"
+        android:src="@drawable/messages_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_analytics"
+        android:layout_marginTop="@dimen/nav_drawer_wrapper_vertical_padding"
+        android:layout_marginEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:id="@+id/messages_count_wrapper">
+
+        <ImageView
+            android:src="@drawable/badge_circle_messages"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white_E0_color"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/messages_count"
+            android:text="11"/>
+
+    </RelativeLayout>
+
+    <!--Button
+        android:id="@+id/btn_tools"
+        android:layout_below="@id/btn_messages"
+        android:layout_width="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        android:text="@string/nd_tools"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/btn_messages"
+        android:src="@drawable/tools_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp" /-->
+    <View
+        android:id="@+id/divider"
+        android:layout_marginTop="@dimen/content_areas_space"
+        android:layout_marginBottom="@dimen/content_areas_space"
+        android:layout_below="@id/btn_messages"
+        android:background="@color/divider_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_consumer_title"
+        android:text="@string/ndst_consumer"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/secondary_text_color"
+        android:gravity="center_vertical"
+        android:layout_below="@id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <Button
+        android:id="@+id/btn_shop"
+        android:layout_below="@id/tv_consumer_title"
+        android:layout_width="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        android:text="@string/nd_shop_blips"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/tv_consumer_title"
+        android:src="@drawable/shop_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp" />
+    <Button
+        android:id="@+id/btn_new_blips"
+        android:layout_below="@id/btn_shop"
+        android:layout_width="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        android:text="@string/nd_new_blips"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+
+    <ImageView
+        android:layout_below="@id/btn_shop"
+        android:src="@drawable/new_icon"
+        android:layout_marginTop="@dimen/nav_drawer_32_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_32_side_edge_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_shop"
+        android:layout_marginTop="@dimen/nav_drawer_wrapper_vertical_padding"
+        android:layout_marginEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:id="@+id/new_blips_count_wrapper">
+
+        <ImageView
+            android:src="@drawable/badge_circle_blips"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white_E0_color"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/new_blips_count"
+            android:text="11"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_blipbook"
+        android:layout_below="@id/btn_new_blips"
+        android:layout_width="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        android:text="@string/nd_personal_blipbook"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/btn_new_blips"
+        android:src="@drawable/book_green_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp" />
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_below="@id/btn_blipbook"
+        android:layout_width="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        android:text="@string/nd_personal_profile"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/btn_blipbook"
+        android:src="@drawable/cog_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp" />
+    <View
+        android:id="@+id/divider2"
+        android:layout_marginTop="@dimen/content_areas_space"
+        android:layout_marginBottom="@dimen/content_areas_space"
+        android:layout_below="@id/btn_profile"
+        android:background="@color/divider_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_below="@id/divider2"
+        android:layout_width="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        android:text="@string/nd_logout"
+        android:singleLine="true"
+        android:onClick="onClick"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_drawer_content_start_padding"
+        android:paddingEnd="@dimen/nav_drawer_side_edge_padding"
+        android:layout_height="@dimen/nav_drawer_item_height" />
+    <ImageView
+        android:layout_below="@id/divider2"
+        android:src="@drawable/logout_icon"
+        android:layout_marginTop="@dimen/nav_drawer_icon_vertical_padding"
+        android:layout_marginStart="@dimen/nav_drawer_side_edge_padding"
+        android:layout_width="26dp"
+        android:layout_height="28dp" />
+</RelativeLayout>

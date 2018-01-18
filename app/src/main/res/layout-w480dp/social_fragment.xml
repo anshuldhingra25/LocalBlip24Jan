@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/scrollSocial"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/tool_bar_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingStart="@dimen/content_side_edge_padding"
+            android:paddingEnd="@dimen/content_side_edge_padding"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="480dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/full_width_text_field_vertical_padding"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/secondary_text_color"
+                android:text="@string/my_social_media"/>
+
+            <!-- FACEBOOK -->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_facebook"
+                android:paddingTop="@dimen/labeled_text_field_top_padding"
+                android:paddingBottom="@dimen/labeled_text_field_bottom_padding"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/et_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/facebook_icon"
+                    android:drawablePadding="@dimen/content_areas_space"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- TWITTER -->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_twitter"
+                android:paddingTop="@dimen/labeled_text_field_top_padding"
+                android:paddingBottom="@dimen/labeled_text_field_bottom_padding"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/et_twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/twitter_icon"
+                    android:drawablePadding="@dimen/content_areas_space"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- INSTAGRAM -->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_instagram"
+                android:paddingTop="@dimen/labeled_text_field_top_padding"
+                android:paddingBottom="@dimen/labeled_text_field_bottom_padding"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/et_instagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/instagram_icon"
+                    android:drawablePadding="@dimen/content_areas_space"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- PINTEREST -->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_pinterest"
+                android:paddingTop="@dimen/labeled_text_field_top_padding"
+                android:paddingBottom="@dimen/labeled_text_field_bottom_padding"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/et_pinterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/pinterest_icon"
+                    android:drawablePadding="@dimen/content_areas_space"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- GOOGLE+ -->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_google"
+                android:paddingTop="@dimen/labeled_text_field_top_padding"
+                android:paddingBottom="@dimen/labeled_text_field_bottom_padding"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/et_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/g_plus"
+                    android:drawablePadding="@dimen/content_areas_space"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- T -->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_tumblr"
+                android:paddingTop="@dimen/labeled_text_field_top_padding"
+                android:paddingBottom="@dimen/labeled_text_field_bottom_padding"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/et_tumblr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/t_icon"
+                    android:drawablePadding="@dimen/content_areas_space"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_snapchat"
+                android:paddingTop="@dimen/labeled_text_field_top_padding"
+                android:paddingBottom="@dimen/labeled_text_field_bottom_padding"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/et_snapchat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/snapchat"
+                    android:drawablePadding="@dimen/content_areas_space"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <android.support.v7.widget.CardView
+        app:cardElevation="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_save"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_action_apply"
+            android:drawablePadding="@dimen/content_areas_space"
+            android:paddingEnd="@dimen/content_side_edge_padding"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:textColor="?colorAccent"
+            android:text="@string/save"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize" />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

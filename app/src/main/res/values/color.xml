@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#3A737A</color>
+    <color name="primary_color_dark">#326C73</color>
+    <color name="accent_color">#FFAB00</color>
+    <color name="button_color">#FAFAFA</color>
+    <color name="colored_button_color">#3A737A</color>
+    <color name="white_75_color">#C0FFFFFF</color>
+    <color name="white_E0_color">#E0FFFFFF</color>
+    <color name="button_shade_color">#1F000000</color>
+    <color name="divider_color">#1F000000</color>
+    <color name="black_50_color">#80000000</color>
+    <color name="grey_color">#808080</color>
+    <color name="primary_text_color">#DF000000</color>
+    <color name="secondary_text_color">#8A000000</color>
+    <color name="tertiary_text_color">#61000000</color>
+    <color name="card_background_light">#fffafafa</color>
+    <color name="background_light">#fff5f5f5</color>
+    <color name="background_dark">#ffe0e0e0</color>
+    <color name="messages_color">#f3ac1d</color>
+    <color name="blip_color">#3a737b</color>
+
+    <item name="transparent" type="color">#00FFFFFF</item>
+    <item name="grey" type="color">#555555</item>
+    <item name="green" type="color">#4499CC00</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+</resources>

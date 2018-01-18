@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="@dimen/account_width"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:paddingBottom="?actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/content_side_edge_padding"
+            android:paddingStart="@dimen/content_side_edge_padding">
+
+            <TextView
+                android:id="@+id/tv_notify"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/til_zipcode"
+                android:layout_marginTop="@dimen/full_width_text_field_vertical_padding"
+                android:text="@string/notiy_me"
+                android:textColor="@color/secondary_text_color" />
+
+            <TextView
+                android:id="@+id/tv_within"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/tv_notify"
+                android:layout_marginEnd="@dimen/content_areas_space"
+                android:layout_marginTop="@dimen/full_width_text_field_vertical_padding"
+                android:text=""
+                android:textColor="@color/secondary_text_color" />
+
+            <TextView
+                android:id="@+id/tv_miles_of"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tv_notify"
+                android:layout_marginStart="@dimen/content_areas_space"
+                android:layout_marginTop="@dimen/full_width_text_field_vertical_padding"
+                android:text="miles from my zip code"
+                android:textColor="@color/secondary_text_color" />
+
+            <Spinner
+                android:id="@+id/sp_miles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_within"
+                android:layout_below="@id/tv_notify"
+                android:layout_toEndOf="@id/tv_within"
+                android:layout_toStartOf="@id/tv_miles_of"
+                android:drawSelectorOnTop="true"
+
+                android:entries="@array/miles_array" />
+
+            <TextView
+                android:id="@+id/tv_categories"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_within"
+                android:layout_marginTop="@dimen/text_field_vertical_padding"
+                android:text="@string/for_categories"
+                android:textColor="@color/secondary_text_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_categories"
+                android:layout_marginTop="@dimen/text_field_vertical_padding"
+                android:orientation="vertical"></LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-6dp"
+        app:cardElevation="4dp">
+
+        <Button
+            android:id="@+id/btn_save_profile"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:drawablePadding="@dimen/content_areas_space"
+            android:drawableStart="@drawable/ic_action_apply"
+            android:paddingEnd="@dimen/content_side_edge_padding"
+            android:text="@string/save"
+            android:textColor="?colorAccent" />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

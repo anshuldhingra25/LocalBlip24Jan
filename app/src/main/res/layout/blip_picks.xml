@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scroll_Blip_Picks"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/blipAlert_icon"
+                    android:layout_width="50dp"
+                    android:src="@drawable/blip_pick"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Blip's Picks"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primary_color"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="FREE!"
+                    android:layout_gravity="center"
+                    android:textColor="#87a430"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Blip's Picks are located at the top of the coupon grid in the category of your choosing.This ensures that your offer will be the first item seen by every consumer that clickson your category. "
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Choose Your Blip"
+                    android:textColor="#000000"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Blip*"
+                    android:textColor="#000000"
+                    android:paddingTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/blip_list"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rect_border"
+                    android:layout_marginLeft="10dp"
+                    android:hint="- Select a Blip -"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:drawableRight="@drawable/ic_action_expand"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="50dp" />
+
+                <!--<ListView-->
+                <!--android:id="@+id/myBlips"-->
+                <!--android:visibility="gone"-->
+                <!--android:background="@drawable/rectangle_sharp_corner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_height="200dp">-->
+
+                <!--</ListView>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Choose your Area"
+                    android:textColor="#000000"
+                    android:paddingTop="20dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Zip code*"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/pickZipcode"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rect_border"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="50dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#87a430"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Choose your Category"
+                    android:textColor="#000000"
+                    android:paddingTop="20dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Category"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:paddingTop="20dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/pick_category"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rect_border"
+                    android:layout_marginLeft="10dp"
+                    android:hint="- Choose A Category -"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:freezesText="true"
+                    android:drawableRight="@drawable/ic_action_expand"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="50dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#87a430"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Choose your Weeks"
+                    android:textColor="#000000"
+                    android:paddingTop="20dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Ad space is scheduled by the calendar week (Sunday thru Saturday)."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Click on the calendar week of your choice."
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <CalendarView
+                    android:id="@+id/pickcalendar"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:firstDayOfWeek="1"
+                    android:background="@drawable/rect_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_week"
+                        android:layout_width="wrap_content"
+                        android:text="Week : "
+                        android:textColor="#000000"
+                        android:paddingTop="10dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/selectWeek"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15dp"
+                        android:layout_toRightOf="@+id/txt_week"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/btn_pick"
+                    android:layout_width="150dp"
+                    android:text="Post My Ad"
+                    android:textAllCaps="false"
+                    android:textSize="18dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_radius"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#87a430"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

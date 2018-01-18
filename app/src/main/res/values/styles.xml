@@ -1,0 +1,81 @@
+<resources>
+    <style name="Theme.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="android:windowBackground">@color/background_light</item>
+
+        <!-- Color palette -->
+        <item name="colorPrimaryDark">@color/primary_color_dark</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+
+        <!-- Dialog attributes -->
+        <item name="dialogTheme">@style/Theme.AppTheme.Dialog</item>
+
+        <!-- AlertDialog attributes -->
+        <item name="alertDialogTheme">@style/Theme.AppTheme.Dialog.Alert</item>
+
+        <!-- Up button -->
+        <item name="homeAsUpIndicator">@drawable/ic_action_back</item>
+    </style>
+
+    <style name="Theme.AppTheme.Dialog.Transparent" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="Theme.AppTheme.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Color palette -->
+        <item name="colorPrimaryDark">@color/primary_color_dark</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+    </style>
+
+    <style name="Theme.AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Color palette -->
+        <item name="colorPrimaryDark">@color/primary_color_dark</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+    </style>
+    <style name="Theme.AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.AppTheme.Switch">
+        <!--item name="colorControlActivated">@android:color/black</item-->
+        <item name="colorSwitchThumbNormal">@color/accent_color</item>
+        <item name="android:colorForeground">@color/accent_color</item>
+    </style>
+    <style name="Theme.AppTheme.AppBar" parent="Theme.AppTheme">
+        <!-- android:textColorPrimary is the  color of the title text
+             in the Toolbar, in the Theme.AppCompat theme:  -->
+        <item name="android:textColorPrimary">#ffffff</item>
+
+        <!-- android:textColorPrimaryInverse is the  color of the title
+             text in the Toolbar, in the Theme.AppCompat.Light theme:  -->
+        <!-- <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item> -->
+
+        <!-- android:actionMenuTextColor is the color of the text of
+              action (menu) items in the Toolbar, at least in the
+              Theme.AppCompat theme.
+              For some reason, they already get the textColorPrimary
+              when running on API 21, but not on older versions of
+              Android, so this is only necessary to support older
+              Android versions.-->
+        <item name="actionMenuTextColor">#b2ffffff</item>
+        <!-- android:textColorSecondary is the color of the menu
+             overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">#b2ffffff</item>
+
+        <!-- This would set the toolbar's background color,
+              but setting this also changes the popup menu's background,
+              even if we define popupTheme for our <Toolbar> -->
+        <item name="android:background">@color/primary_color</item>
+    </style>
+    <style name="Raised.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/raised_button_background</item>
+    </style>
+    <style name="Raised.Button.Colored" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white_E0_color</item>
+        <item name="android:background">@drawable/raised_colored_button_background</item>
+    </style>
+</resources>

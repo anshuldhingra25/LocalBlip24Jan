@@ -1,0 +1,21 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/Theme.AppTheme.AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height">
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:id="@+id/scrollEditLocation"
+        android:layout_marginStart="@dimen/content_side_edge_padding"
+        android:layout_marginEnd="@dimen/content_side_edge_padding"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <include  layout="@layout/edit_location_layout"/>
+    </ScrollView>
+</LinearLayout>

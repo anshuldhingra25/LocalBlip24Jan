@@ -1,0 +1,121 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/card_to_card_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:paddingStart="@dimen/card_text_side_margin"
+        android:paddingEnd="@dimen/card_text_side_margin"
+        android:paddingTop="@dimen/card_text_vertical_big_margin"
+        android:paddingBottom="@dimen/card_text_vertical_big_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_vendor"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:gravity="center_vertical"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_offer"
+            android:layout_marginTop="@dimen/card_title_to_subtitle_padding"
+            android:layout_below="@id/tv_vendor"
+            android:gravity="center_vertical"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@color/secondary_text_color"
+            android:ellipsize="marquee"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/save_layout"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/card_text_vertical_big_margin"
+            android:layout_below="@id/tv_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/you_save"
+                android:layout_marginEnd="@dimen/card_text_side_margin"
+                android:layout_width="wrap_content"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_prefix"
+                android:text="@string/dollar_sign"
+                android:visibility="gone"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="wrap_content"
+                style="@style/TextAppearance.AppCompat.Display2"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_suffix"
+                android:text="@string/percent_sign"
+                android:visibility="gone"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/center_divider"
+            android:layout_below="@id/save_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="1dp"
+            android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/tv_coupons_left_title"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:text="@string/blips_left"
+            android:textColor="@color/secondary_text_color"
+            android:layout_marginTop="@dimen/card_text_vertical_big_margin"
+            android:layout_marginEnd="@dimen/card_text_side_margin"
+            android:layout_below="@id/save_layout"
+            android:layout_toStartOf="@id/center_divider"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_expiration_date_title"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:text="@string/use_by"
+            android:textColor="@color/secondary_text_color"
+            android:layout_marginTop="@dimen/card_text_vertical_big_margin"
+            android:layout_marginStart="@dimen/card_text_side_margin"
+            android:layout_below="@id/save_layout"
+            android:layout_toEndOf="@id/center_divider"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_coupons_left"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/card_text_vertical_margin"
+            android:layout_marginEnd="@dimen/card_text_side_margin"
+            android:layout_below="@id/tv_coupons_left_title"
+            android:layout_toStartOf="@id/center_divider"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_expiration_date"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/card_text_vertical_margin"
+            android:layout_marginStart="@dimen/card_text_side_margin"
+            android:layout_below="@id/tv_expiration_date_title"
+            android:layout_toEndOf="@id/center_divider"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ordiacreativeorg.localblip">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.ordiacreative.localblip.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ordiacreativeorg.localblip.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDlMD6rCryGyaWX89zw-v3jXEvU6sf_Aac" />
+        <!-- <meta-data -->
+        <!-- android:name="PW_APPID" -->
+        <!-- android:value="F54AE-8D460" B2DC9-8DFA5/> -->
+        <meta-data
+            android:name="PW_APPID"
+            android:value="F54AE-8D460" />
+        <meta-data
+            android:name="PW_PROJECT_ID"
+            android:value="A61744457682" />
+
+        <receiver
+            android:name=".activity.LBMessagesIntentReceiver"
+            android:label="BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".activity.LBNotificationsIntentReceiver"
+            android:label="BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".activity.LBAlertIntentReceiver"
+            android:label="BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pushwoosh.local.AlarmReceiver" />
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.ordiacreative.localblip" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.LogInActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppTheme" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/Theme.AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.BlipDetails"
+            android:label="@string/title_activity_blip_details"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/Theme.AppTheme" />
+        <activity
+            android:name=".activity.EditBlipDetails"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/Theme.AppTheme" />
+        <activity
+            android:name=".activity.EditLocation"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/Theme.AppTheme" />
+        <activity
+            android:name=".activity.Chat"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/Theme.AppTheme" />
+        <activity
+            android:name=".activity.ChatStandAlone"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppTheme" />
+        <activity
+            android:name=".activity.BlipDetailsStandAlone"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppTheme" />
+        <activity
+            android:name=".activity.BlipAnalyticsDetails"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/Theme.AppTheme" />
+        <activity android:name=".activity.BarcodeScanner" />
+        <activity android:name=".activity.CameraPreview" />
+        <activity android:name=".activity.VideoDisplay"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/Theme.AppTheme.AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height">
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:id="@+id/scrollEdit_Details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:focusableInTouchMode="true"
+        android:layout_weight="1">
+        <include  layout="@layout/edit_blip_details_layout"/>
+    </ScrollView>
+</LinearLayout>

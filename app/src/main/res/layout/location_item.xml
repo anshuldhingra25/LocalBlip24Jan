@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginTop="@dimen/card_to_card_margin"
+    android:layout_marginBottom="@dimen/card_to_card_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/loc"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_text"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/card_to_card_margin"
+        android:layout_marginBottom="@dimen/card_to_card_margin"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginStart="@dimen/content_side_edge_padding"
+        android:layout_marginEnd="@dimen/content_side_edge_padding"
+        android:background="@color/divider_color"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"/>
+    <ImageButton
+        android:id="@+id/btn_action"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:src="@drawable/ic_action_show_on_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/follow"-->
+        <!--style="@style/Base.TextAppearance.AppCompat.Subhead"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_below="@+id/loc"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="Follow this merchant"-->
+        <!--android:layout_marginTop="@dimen/card_to_card_margin"-->
+        <!--android:layout_marginBottom="@dimen/card_to_card_margin"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:id="@+id/followSocial"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_below="@+id/follow"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--</LinearLayout>-->
+</RelativeLayout>

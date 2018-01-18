@@ -1,0 +1,9 @@
+<resources>
+    <style name="Raised.Button" parent="android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/raised_button_background</item>
+    </style>
+    <style name="Raised.Button.Colored" parent="android:style/Widget.Material.Button">
+        <item name="android:textColor">@color/white_E0_color</item>
+        <item name="android:background">@drawable/raised_colored_button_background</item>
+    </style>
+</resources>

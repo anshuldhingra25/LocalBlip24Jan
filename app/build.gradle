@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.ordiacreativeorg.localblip"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 4
+        versionName "1.4"
+
+    }
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            debuggable false
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    compile('com.android.support:support-v4:23.4.0') {
+        force = true;
+    }
+
+    compile 'com.pushwoosh:pushwoosh:4.6.0'
+    compile 'com.google.android.gms:play-services-gcm:9.6.0'
+    compile 'com.google.android.gms:play-services-location:9.6.0'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.squareup.okhttp:logging-interceptor:2.7.0'
+    compile 'com.google.android.gms:play-services-maps:9.6.0'
+    compile 'com.isseiaoki:simplecropview:1.1.4'
+    compile 'me.dm7.barcodescanner:zbar:1.9'
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'com.android.support:support-v4:23.4.0'
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rellist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppTheme.AppBar"
+        android:visibility="visible"
+        android:layout_below="@+id/tb_appbar">
+
+        <!--<View-->
+            <!--android:id="@+id/view_left"-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/primary_color" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/view_middle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_toLeftOf="@+id/view_right"-->
+            <!--android:layout_toRightOf="@+id/view_left" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/view_right"-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:background="@color/primary_color" />-->
+
+        <com.ordiacreativeorg.localblip.util.HorizontalListView
+            android:id="@+id/book_my_ride_listview"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/accent_color"
+            android:paddingLeft="5dp"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="5dp"
+            android:divider="#00000000"
+
+
+            />
+    </RelativeLayout>
+<!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:id="@+id/showOff"-->
+    <!--android:layout_height="55dp">-->
+
+<!--</RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/tv_empty"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_blips_found"
+        android:textColor="@color/secondary_text_color"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="@dimen/card_to_card_margin"
+        android:layout_marginStart="@dimen/card_to_card_margin"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/recyclerview_bottom_padding_for_fab"
+        android:scrollbars="vertical" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_main_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/content_side_edge_padding"
+        android:src="@drawable/ic_action_search"
+        app:fabSize="normal" />
+    </android.support.design.widget.CoordinatorLayout>
